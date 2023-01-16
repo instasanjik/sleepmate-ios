@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		041783242975B1A80038EF40 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041783232975B1A80038EF40 /* CarouselView.swift */; };
+		041783262975BA4F0038EF40 /* CarouselItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041783252975BA4F0038EF40 /* CarouselItemCollectionViewCell.swift */; };
+		041783282975C50F0038EF40 /* DefaultWhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041783272975C50F0038EF40 /* DefaultWhiteButton.swift */; };
+		0417832A2975C53F0038EF40 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041783292975C53F0038EF40 /* ColorPalette.swift */; };
+		0417832C2975E3850038EF40 /* SKViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0417832B2975E3850038EF40 /* SKViewContoller.swift */; };
+		0417832E2975E86C0038EF40 /* CarouselItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0417832D2975E86C0038EF40 /* CarouselItem.swift */; };
+		041783302975EA2B0038EF40 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0417832F2975EA2B0038EF40 /* Screen.swift */; };
+		041783342975F35D0038EF40 /* IndicatorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041783332975F35D0038EF40 /* IndicatorCollectionViewCell.swift */; };
 		0421BE3629718A53001237C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421BE3529718A53001237C9 /* AppDelegate.swift */; };
 		0421BE3829718A53001237C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421BE3729718A53001237C9 /* SceneDelegate.swift */; };
 		0421BE3A29718A53001237C9 /* CarouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421BE3929718A53001237C9 /* CarouselViewController.swift */; };
@@ -18,6 +25,13 @@
 
 /* Begin PBXFileReference section */
 		041783232975B1A80038EF40 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
+		041783252975BA4F0038EF40 /* CarouselItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		041783272975C50F0038EF40 /* DefaultWhiteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultWhiteButton.swift; sourceTree = "<group>"; };
+		041783292975C53F0038EF40 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
+		0417832B2975E3850038EF40 /* SKViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKViewContoller.swift; sourceTree = "<group>"; };
+		0417832D2975E86C0038EF40 /* CarouselItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselItem.swift; sourceTree = "<group>"; };
+		0417832F2975EA2B0038EF40 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		041783332975F35D0038EF40 /* IndicatorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorCollectionViewCell.swift; sourceTree = "<group>"; };
 		0421BE3229718A53001237C9 /* Sleepmate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sleepmate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0421BE3529718A53001237C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0421BE3729718A53001237C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +102,8 @@
 				0421BE4029718A54001237C9 /* LaunchScreen.storyboard */,
 				0421BE4329718A54001237C9 /* Info.plist */,
 				0421BE3E29718A54001237C9 /* Assets.xcassets */,
+				041783292975C53F0038EF40 /* ColorPalette.swift */,
+				0417832F2975EA2B0038EF40 /* Screen.swift */,
 			);
 			path = Resourses;
 			sourceTree = "<group>";
@@ -95,7 +111,11 @@
 		0421BE4B29718C61001237C9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0417832B2975E3850038EF40 /* SKViewContoller.swift */,
+				041783272975C50F0038EF40 /* DefaultWhiteButton.swift */,
 				041783232975B1A80038EF40 /* CarouselView.swift */,
+				041783252975BA4F0038EF40 /* CarouselItemCollectionViewCell.swift */,
+				041783332975F35D0038EF40 /* IndicatorCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -103,6 +123,7 @@
 		0421BE4C29718C66001237C9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0417832D2975E86C0038EF40 /* CarouselItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -269,6 +290,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041783342975F35D0038EF40 /* IndicatorCollectionViewCell.swift in Sources */,
+				0417832A2975C53F0038EF40 /* ColorPalette.swift in Sources */,
+				041783262975BA4F0038EF40 /* CarouselItemCollectionViewCell.swift in Sources */,
+				0417832E2975E86C0038EF40 /* CarouselItem.swift in Sources */,
+				041783282975C50F0038EF40 /* DefaultWhiteButton.swift in Sources */,
+				0417832C2975E3850038EF40 /* SKViewContoller.swift in Sources */,
+				041783302975EA2B0038EF40 /* Screen.swift in Sources */,
 				0421BE3A29718A53001237C9 /* CarouselViewController.swift in Sources */,
 				0421BE3629718A53001237C9 /* AppDelegate.swift in Sources */,
 				041783242975B1A80038EF40 /* CarouselView.swift in Sources */,
@@ -418,6 +446,7 @@
 				INFOPLIST_FILE = Sleepmate/Resourses/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -448,6 +477,7 @@
 				INFOPLIST_FILE = Sleepmate/Resourses/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
