@@ -9,19 +9,23 @@
 /* Begin PBXBuildFile section */
 		0421BE3629718A53001237C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421BE3529718A53001237C9 /* AppDelegate.swift */; };
 		0421BE3829718A53001237C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421BE3729718A53001237C9 /* SceneDelegate.swift */; };
-		0421BE3A29718A53001237C9 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421BE3929718A53001237C9 /* LoadingViewController.swift */; };
+		0421BE3A29718A53001237C9 /* CarouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421BE3929718A53001237C9 /* CarouselViewController.swift */; };
 		0421BE3F29718A54001237C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0421BE3E29718A54001237C9 /* Assets.xcassets */; };
 		0421BE4229718A54001237C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0421BE4029718A54001237C9 /* LaunchScreen.storyboard */; };
+		FE5832EB28C9E88CA788BBF0 /* Pods_Sleepmate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47A562833F3E09A8E7113C8E /* Pods_Sleepmate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0421BE3229718A53001237C9 /* Sleepmate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sleepmate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0421BE3529718A53001237C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0421BE3729718A53001237C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0421BE3929718A53001237C9 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		0421BE3929718A53001237C9 /* CarouselViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewController.swift; sourceTree = "<group>"; };
 		0421BE3E29718A54001237C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0421BE4129718A54001237C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0421BE4329718A54001237C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47A562833F3E09A8E7113C8E /* Pods_Sleepmate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sleepmate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74465786AF8FBFB67A39DEB9 /* Pods-Sleepmate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sleepmate.release.xcconfig"; path = "Target Support Files/Pods-Sleepmate/Pods-Sleepmate.release.xcconfig"; sourceTree = "<group>"; };
+		A44BDD7BB216D1D38808E91C /* Pods-Sleepmate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sleepmate.debug.xcconfig"; path = "Target Support Files/Pods-Sleepmate/Pods-Sleepmate.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE5832EB28C9E88CA788BBF0 /* Pods_Sleepmate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				0421BE3429718A53001237C9 /* Sleepmate */,
 				0421BE3329718A53001237C9 /* Products */,
+				D0063294020D73882D37D058 /* Pods */,
+				13F131FE54889DDC836A363E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,7 +107,7 @@
 		0421BE4D29718C70001237C9 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				0421BE3929718A53001237C9 /* LoadingViewController.swift */,
+				0421BE3929718A53001237C9 /* CarouselViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -128,6 +135,24 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		13F131FE54889DDC836A363E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47A562833F3E09A8E7113C8E /* Pods_Sleepmate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D0063294020D73882D37D058 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A44BDD7BB216D1D38808E91C /* Pods-Sleepmate.debug.xcconfig */,
+				74465786AF8FBFB67A39DEB9 /* Pods-Sleepmate.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0421BE4629718A54001237C9 /* Build configuration list for PBXNativeTarget "Sleepmate" */;
 			buildPhases = (
+				08AFA4EBF09DCF9E99F44371 /* [CP] Check Pods Manifest.lock */,
 				0421BE2E29718A53001237C9 /* Sources */,
 				0421BE2F29718A53001237C9 /* Frameworks */,
 				0421BE3029718A53001237C9 /* Resources */,
+				7FD2C5C0E380C3C82D5BF415 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -193,12 +220,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		08AFA4EBF09DCF9E99F44371 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sleepmate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FD2C5C0E380C3C82D5BF415 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sleepmate/Pods-Sleepmate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sleepmate/Pods-Sleepmate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sleepmate/Pods-Sleepmate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0421BE2E29718A53001237C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0421BE3A29718A53001237C9 /* LoadingViewController.swift in Sources */,
+				0421BE3A29718A53001237C9 /* CarouselViewController.swift in Sources */,
 				0421BE3629718A53001237C9 /* AppDelegate.swift in Sources */,
 				0421BE3829718A53001237C9 /* SceneDelegate.swift in Sources */,
 			);
@@ -334,6 +403,7 @@
 		};
 		0421BE4729718A54001237C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A44BDD7BB216D1D38808E91C /* Pods-Sleepmate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -363,6 +433,7 @@
 		};
 		0421BE4829718A54001237C9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74465786AF8FBFB67A39DEB9 /* Pods-Sleepmate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
