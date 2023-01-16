@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041783242975B1A80038EF40 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041783232975B1A80038EF40 /* CarouselView.swift */; };
 		0421BE3629718A53001237C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421BE3529718A53001237C9 /* AppDelegate.swift */; };
 		0421BE3829718A53001237C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421BE3729718A53001237C9 /* SceneDelegate.swift */; };
 		0421BE3A29718A53001237C9 /* CarouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421BE3929718A53001237C9 /* CarouselViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		041783232975B1A80038EF40 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
 		0421BE3229718A53001237C9 /* Sleepmate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sleepmate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0421BE3529718A53001237C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0421BE3729718A53001237C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 		0421BE4B29718C61001237C9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				041783232975B1A80038EF40 /* CarouselView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -149,7 +152,6 @@
 				A44BDD7BB216D1D38808E91C /* Pods-Sleepmate.debug.xcconfig */,
 				74465786AF8FBFB67A39DEB9 /* Pods-Sleepmate.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -269,6 +271,7 @@
 			files = (
 				0421BE3A29718A53001237C9 /* CarouselViewController.swift in Sources */,
 				0421BE3629718A53001237C9 /* AppDelegate.swift in Sources */,
+				041783242975B1A80038EF40 /* CarouselView.swift in Sources */,
 				0421BE3829718A53001237C9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
