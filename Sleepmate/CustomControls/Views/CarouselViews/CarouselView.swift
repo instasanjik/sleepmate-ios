@@ -8,7 +8,14 @@
 import UIKit
 import SnapKit
 
+protocol CarouselViewDelegate: AnyObject {
+    func userHasFinishedViewingCarousel()
+}
+
 class CarouselView: UIView {
+    
+    var delegate: CarouselViewDelegate?
+    
     let content: [CarouselItem] =   [
         CarouselItem(imageName: "carouselIllustartion1",
                      bodyText: "Track your sleep patterns and improve your sleep habits with SleepMate"),
@@ -126,7 +133,7 @@ extension CarouselView: UICollectionViewDelegate, UICollectionViewDataSource, UI
             if let indexPath = carouselCollectionView.indexPath(for: cell) {
                 highlightItemAt(indexPath.row)
                 if indexPath.row == content.count - 1 {
-                    print("go bro")
+                    delegate?.userHasFinishedViewingCarousel()
                 }
             }
         }

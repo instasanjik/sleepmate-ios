@@ -30,7 +30,7 @@ class DefaultWhiteButton: UIButton {
         isEnabled = false
     }
     
-    func enaable() {
+    func enable() {
         alpha = 1
         isEnabled = true
     }

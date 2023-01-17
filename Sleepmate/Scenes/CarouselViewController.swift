@@ -45,6 +45,8 @@ extension CarouselViewController {
     
     func setupContinueButton() {
         view.addSubview(continueButton)
+        continueButton.addTarget(self, action: #selector(continueTapped), for: .touchUpInside)
+        continueButton.disable()
         continueButton.snp.makeConstraints { make in
             make.bottom.equalTo(view.safeAreaLayoutGuide).inset(8)
             make.left.equalTo(view).offset(24)
@@ -56,11 +58,26 @@ extension CarouselViewController {
     
     func setupCarouselView() {
         view.addSubview(carouselView)
+        carouselView.delegate = self
         carouselView.snp.makeConstraints { make in
             make.top.equalTo(logoImageView.snp.bottom).offset(24)
             make.left.right.equalTo(view)
             make.bottom.equalTo(continueButton.snp.top).inset(-24)
         }
+    }
+    
+    
+}
+
+
+extension CarouselViewController: CarouselViewDelegate {
+    
+    @objc func continueTapped() {
+        print("s")
+    }
+    
+    func userHasFinishedViewingCarousel() {
+        continueButton.enable()
     }
     
     
