@@ -56,6 +56,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		041783352976A8D90038EF40 /* CarouselViews */ = {
+			isa = PBXGroup;
+			children = (
+				041783232975B1A80038EF40 /* CarouselView.swift */,
+				041783252975BA4F0038EF40 /* CarouselItemCollectionViewCell.swift */,
+				041783332975F35D0038EF40 /* IndicatorCollectionViewCell.swift */,
+			);
+			path = CarouselViews;
+			sourceTree = "<group>";
+		};
 		0421BE2929718A53001237C9 = {
 			isa = PBXGroup;
 			children = (
@@ -111,11 +121,9 @@
 		0421BE4B29718C61001237C9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				041783352976A8D90038EF40 /* CarouselViews */,
 				0417832B2975E3850038EF40 /* SKViewContoller.swift */,
 				041783272975C50F0038EF40 /* DefaultWhiteButton.swift */,
-				041783232975B1A80038EF40 /* CarouselView.swift */,
-				041783252975BA4F0038EF40 /* CarouselItemCollectionViewCell.swift */,
-				041783332975F35D0038EF40 /* IndicatorCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
