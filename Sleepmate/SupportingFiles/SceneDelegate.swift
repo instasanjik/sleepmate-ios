@@ -16,7 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
       
         let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = CarouselViewController() // Your initial view controller.
+        window.rootViewController = AuthorizationNavigationController()
         window.makeKeyAndVisible()
         self.window = window
     }
