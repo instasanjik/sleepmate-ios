@@ -25,6 +25,10 @@ class CarouselViewController: SKViewController {
         setupContinueButton()
         setupCarouselView()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        carouselView.highlightItemAt(0)
+    }
 
 
 }

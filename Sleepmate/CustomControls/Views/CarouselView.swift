@@ -115,10 +115,6 @@ extension CarouselView: UICollectionViewDelegate, UICollectionViewDataSource, UI
             return cell
         case indicatorsCollectionView:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "indicatorView", for: indexPath) as! IndicatorCollectionViewCell
-            if indexPath.row == 0 {
-                cell.indicatorView.backgroundColor = ColorPalette.lightGray
-                cell.isSelected = true
-            }
             return cell
         default: return UICollectionViewCell()
         }
@@ -128,12 +124,17 @@ extension CarouselView: UICollectionViewDelegate, UICollectionViewDataSource, UI
         guard scrollView == carouselCollectionView else { return }
         for cell in carouselCollectionView.visibleCells {
             if let indexPath = carouselCollectionView.indexPath(for: cell) {
-                indicatorsCollectionView.selectItem(at: indexPath, animated: true, scrollPosition: .top)
+                highlightItemAt(indexPath.row)
                 if indexPath.row == content.count - 1 {
                     print("go bro")
                 }
             }
         }
+    }
+    
+    func highlightItemAt(_ row: Int) {
+        let indexPath = IndexPath(row: row, section: 0)
+        indicatorsCollectionView.selectItem(at: indexPath, animated: true, scrollPosition: [])
     }
     
     
