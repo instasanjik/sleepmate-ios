@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class CarouselViewController: SKViewController {
+class CarouselViewController: UIViewController {
     
     lazy var logoImageView: UIImageView = {
         let imageView = UIImageView()
@@ -51,7 +51,7 @@ extension CarouselViewController {
             make.bottom.equalTo(view.safeAreaLayoutGuide).inset(8)
             make.left.equalTo(view).offset(24)
             make.centerX.equalTo(view)
-            make.height.equalTo(44)
+            make.height.equalTo(48)
         }
         continueButton.setupTitle(text: "CONTINUE")
     }
@@ -73,7 +73,8 @@ extension CarouselViewController {
 extension CarouselViewController: CarouselViewDelegate {
     
     @objc func continueTapped() {
-        print("s")
+        let vc = LoginViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     func userHasFinishedViewingCarousel() {
