@@ -126,7 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				041783352976A8D90038EF40 /* CarouselViews */,
-				041783272975C50F0038EF40 /* DefaultWhiteButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -153,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				0417833A2976CE800038EF40 /* SKTextField.swift */,
+				041783272975C50F0038EF40 /* DefaultWhiteButton.swift */,
 				0421BE4B29718C61001237C9 /* Views */,
 				0421BE5029719135001237C9 /* Extensions */,
 			);
