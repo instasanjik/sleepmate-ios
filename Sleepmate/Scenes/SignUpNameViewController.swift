@@ -14,6 +14,8 @@ class SignUpNameViewController: UIViewController {
         let textField = SKTextField()
         textField.placeholder = "Enter your name"
         textField.textContentType = .name
+        textField.addTarget(self, action: #selector(nameTextFieldEditingChanged(_:)), for: .editingChanged)
+        textField.delegate = self
         return textField
     }()
     
@@ -66,6 +68,7 @@ extension SignUpNameViewController {
         view.addSubview(continueButton)
         continueButton.addTarget(self, action: #selector(continueTapped), for: .touchUpInside)
         continueButton.setupTitle(text: "CONTINUE")
+        continueButton.disable()
         continueButton.snp.makeConstraints { make in
             make.height.equalTo(48)
             make.left.equalTo(view).offset(24)
@@ -96,10 +99,30 @@ extension SignUpNameViewController {
 }
 
 
-extension SignUpNameViewController {
+extension SignUpNameViewController: UITextFieldDelegate {
     
     @objc func continueTapped() {
-        print("continue tapped")
+        let vc = SignUpAdditionViewController()
+        vc.name = nameTextField.text ?? ""
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc func nameTextFieldEditingChanged(_ sender: UITextField) {
+        if sender.text?.isEmpty == true {
+            continueButton.disable()
+        } else {
+            continueButton.enable()
+        }
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        guard let textFieldText = textField.text,
+            let rangeOfTextToReplace = Range(range, in: textFieldText) else {
+                return false
+        }
+        let substringToReplace = textFieldText[rangeOfTextToReplace]
+        let count = textFieldText.count - substringToReplace.count + string.count
+        return count <= 50
     }
     
     
