@@ -165,7 +165,8 @@ extension LoginViewController {
     }
     
     @objc func signUpTapped(_ sender: UITapGestureRecognizer) {
-        print(NSString(#file).lastPathComponent + ": sign up tapped")
+        let vc = SignUpNameViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     
