@@ -24,7 +24,7 @@ class SignUpAdditionViewController: UIViewController {
         label.text = "Nice to meet you, \(name)!\nLet’s fill additional data"
         label.font = UIFont.systemFont(ofSize: 16)
         label.textColor = ColorPalette.white
-        label.numberOfLines = 2
+        label.numberOfLines = 0
         return label
     }()
     
@@ -77,6 +77,7 @@ extension SignUpAdditionViewController {
         greetingLabel.snp.makeConstraints { make in
             make.left.equalTo(view).offset(40)
             make.centerY.equalTo(logoImageView)
+            make.right.equalTo(logoImageView.snp.left)
         }
     }
     
