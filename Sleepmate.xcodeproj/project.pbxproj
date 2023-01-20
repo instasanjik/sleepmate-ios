@@ -22,6 +22,7 @@
 		0421BE3A29718A53001237C9 /* CarouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421BE3929718A53001237C9 /* CarouselViewController.swift */; };
 		0421BE3F29718A54001237C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0421BE3E29718A54001237C9 /* Assets.xcassets */; };
 		0421BE4229718A54001237C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0421BE4029718A54001237C9 /* LaunchScreen.storyboard */; };
+		04F73A69297AF538007C6927 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F73A68297AF538007C6927 /* SignUpViewController.swift */; };
 		FE5832EB28C9E88CA788BBF0 /* Pods_Sleepmate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47A562833F3E09A8E7113C8E /* Pods_Sleepmate.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		0421BE3E29718A54001237C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0421BE4129718A54001237C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0421BE4329718A54001237C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F73A68297AF538007C6927 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		47A562833F3E09A8E7113C8E /* Pods_Sleepmate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sleepmate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74465786AF8FBFB67A39DEB9 /* Pods-Sleepmate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sleepmate.release.xcconfig"; path = "Target Support Files/Pods-Sleepmate/Pods-Sleepmate.release.xcconfig"; sourceTree = "<group>"; };
 		A44BDD7BB216D1D38808E91C /* Pods-Sleepmate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sleepmate.debug.xcconfig"; path = "Target Support Files/Pods-Sleepmate/Pods-Sleepmate.debug.xcconfig"; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				041783362976B5F30038EF40 /* AuthorizationNavigationController.swift */,
 				0421BE3929718A53001237C9 /* CarouselViewController.swift */,
 				041783382976CB110038EF40 /* LoginViewController.swift */,
+				04F73A68297AF538007C6927 /* SignUpViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				041783282975C50F0038EF40 /* DefaultWhiteButton.swift in Sources */,
 				041783302975EA2B0038EF40 /* Screen.swift in Sources */,
 				041783372976B5F30038EF40 /* AuthorizationNavigationController.swift in Sources */,
+				04F73A69297AF538007C6927 /* SignUpViewController.swift in Sources */,
 				0421BE3A29718A53001237C9 /* CarouselViewController.swift in Sources */,
 				0421BE3629718A53001237C9 /* AppDelegate.swift in Sources */,
 				041783242975B1A80038EF40 /* CarouselView.swift in Sources */,
