@@ -42,8 +42,8 @@ class SignUpNameViewController: UIViewController {
         
         setupNameTextField()
         setupContinueButton()
-        setupGreetingLabel()
         setupLogoImageView()
+        setupGreetingLabel()
     }
     
     
@@ -74,21 +74,21 @@ extension SignUpNameViewController {
         }
     }
     
+    func setupLogoImageView() {
+        view.addSubview(logoImageView)
+        logoImageView.snp.makeConstraints { make in
+            make.top.equalTo(view.safeAreaLayoutGuide).inset(48)
+            make.height.equalTo(79)
+            make.width.equalTo(98)
+            make.right.equalTo(view).inset(-30)
+        }
+    }
+    
     func setupGreetingLabel() {
         view.addSubview(greetingLabel)
         greetingLabel.snp.makeConstraints { make in
             make.left.equalTo(view).offset(40)
-            make.bottom.equalTo(nameTextField.snp.top).inset(-120)
-        }
-    }
-    
-    func setupLogoImageView() {
-        view.addSubview(logoImageView)
-        logoImageView.snp.makeConstraints { make in
-            make.centerY.equalTo(greetingLabel)
-            make.height.equalTo(79)
-            make.width.equalTo(98)
-            make.right.equalTo(view).inset(-30)
+            make.centerY.equalTo(logoImageView)
         }
     }
     
