@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class SignUpViewController: UIViewController {
+class SignUpNameViewController: UIViewController {
     
     lazy var nameTextField: SKTextField = {
         let textField = SKTextField()
@@ -50,7 +50,7 @@ class SignUpViewController: UIViewController {
 }
 
 
-extension SignUpViewController {
+extension SignUpNameViewController {
     
     func setupNameTextField() {
         view.addSubview(nameTextField)
@@ -96,7 +96,7 @@ extension SignUpViewController {
 }
 
 
-extension SignUpViewController {
+extension SignUpNameViewController {
     
     @objc func continueTapped() {
         print("continue tapped")

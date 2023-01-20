@@ -22,7 +22,7 @@
 		0421BE3A29718A53001237C9 /* CarouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421BE3929718A53001237C9 /* CarouselViewController.swift */; };
 		0421BE3F29718A54001237C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0421BE3E29718A54001237C9 /* Assets.xcassets */; };
 		0421BE4229718A54001237C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0421BE4029718A54001237C9 /* LaunchScreen.storyboard */; };
-		04F73A69297AF538007C6927 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F73A68297AF538007C6927 /* SignUpViewController.swift */; };
+		04F73A69297AF538007C6927 /* SignUpNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F73A68297AF538007C6927 /* SignUpNameViewController.swift */; };
 		04F73A6B297B2A22007C6927 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F73A6A297B2A22007C6927 /* Logger.swift */; };
 		04F73A6F297B2A38007C6927 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F73A6D297B2A38007C6927 /* Date.swift */; };
 		04F73A70297B2A38007C6927 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F73A6E297B2A38007C6927 /* Double.swift */; };
@@ -47,7 +47,7 @@
 		0421BE3E29718A54001237C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0421BE4129718A54001237C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0421BE4329718A54001237C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04F73A68297AF538007C6927 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		04F73A68297AF538007C6927 /* SignUpNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpNameViewController.swift; sourceTree = "<group>"; };
 		04F73A6A297B2A22007C6927 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		04F73A6D297B2A38007C6927 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		04F73A6E297B2A38007C6927 /* Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
@@ -152,7 +152,7 @@
 				041783362976B5F30038EF40 /* AuthorizationNavigationController.swift */,
 				0421BE3929718A53001237C9 /* CarouselViewController.swift */,
 				041783382976CB110038EF40 /* LoginViewController.swift */,
-				04F73A68297AF538007C6927 /* SignUpViewController.swift */,
+				04F73A68297AF538007C6927 /* SignUpNameViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -334,7 +334,7 @@
 				041783282975C50F0038EF40 /* DefaultWhiteButton.swift in Sources */,
 				041783302975EA2B0038EF40 /* Screen.swift in Sources */,
 				041783372976B5F30038EF40 /* AuthorizationNavigationController.swift in Sources */,
-				04F73A69297AF538007C6927 /* SignUpViewController.swift in Sources */,
+				04F73A69297AF538007C6927 /* SignUpNameViewController.swift in Sources */,
 				0421BE3A29718A53001237C9 /* CarouselViewController.swift in Sources */,
 				04F73A6B297B2A22007C6927 /* Logger.swift in Sources */,
 				0421BE3629718A53001237C9 /* AppDelegate.swift in Sources */,
