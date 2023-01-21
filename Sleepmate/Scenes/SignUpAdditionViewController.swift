@@ -128,7 +128,10 @@ extension SignUpAdditionViewController {
 extension SignUpAdditionViewController {
     
     @objc func signUpTapped() {
-        
+        let vc = LoadingViewController()
+        vc.modalTransitionStyle = .crossDissolve
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
     }
     
     
