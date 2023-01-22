@@ -25,6 +25,7 @@
 		04783C29297BC76700A3A4AC /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04783C28297BC76700A3A4AC /* LoadingViewController.swift */; };
 		04783C2B297BC7D300A3A4AC /* InformationSearchingAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 04783C2A297BC7D300A3A4AC /* InformationSearchingAnimation.json */; };
 		04783C2E297BCF9000A3A4AC /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04783C2D297BCF9000A3A4AC /* UIView.swift */; };
+		04783C30297BD10300A3A4AC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04783C2F297BD10300A3A4AC /* User.swift */; };
 		04F73A69297AF538007C6927 /* SignUpNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F73A68297AF538007C6927 /* SignUpNameViewController.swift */; };
 		04F73A6B297B2A22007C6927 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F73A6A297B2A22007C6927 /* Logger.swift */; };
 		04F73A6F297B2A38007C6927 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F73A6D297B2A38007C6927 /* Date.swift */; };
@@ -54,6 +55,7 @@
 		04783C28297BC76700A3A4AC /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		04783C2A297BC7D300A3A4AC /* InformationSearchingAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = InformationSearchingAnimation.json; sourceTree = "<group>"; };
 		04783C2D297BCF9000A3A4AC /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		04783C2F297BD10300A3A4AC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		04F73A68297AF538007C6927 /* SignUpNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpNameViewController.swift; sourceTree = "<group>"; };
 		04F73A6A297B2A22007C6927 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		04F73A6D297B2A38007C6927 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				0417832D2975E86C0038EF40 /* CarouselItem.swift */,
+				04783C2F297BD10300A3A4AC /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				041783242975B1A80038EF40 /* CarouselView.swift in Sources */,
 				041783392976CB110038EF40 /* LoginViewController.swift in Sources */,
 				0421BE3829718A53001237C9 /* SceneDelegate.swift in Sources */,
+				04783C30297BD10300A3A4AC /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
