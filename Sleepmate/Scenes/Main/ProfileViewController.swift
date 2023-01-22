@@ -11,11 +11,19 @@ class ProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .green
-
-        // Do any additional setup after loading the view.
+        updateUI()
     }
-    
 
 
 }
+
+
+extension ProfileViewController {
+    
+    func updateUI() {
+        view.backgroundColor = ColorPalette.darkBlue
+    }
+    
+    
+}
+

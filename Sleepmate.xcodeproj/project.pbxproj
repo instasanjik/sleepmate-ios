@@ -26,6 +26,11 @@
 		04783C2B297BC7D300A3A4AC /* InformationSearchingAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 04783C2A297BC7D300A3A4AC /* InformationSearchingAnimation.json */; };
 		04783C2E297BCF9000A3A4AC /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04783C2D297BCF9000A3A4AC /* UIView.swift */; };
 		04783C30297BD10300A3A4AC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04783C2F297BD10300A3A4AC /* User.swift */; };
+		04A74AA4297D93CC005D2BEE /* MainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A74AA3297D93CC005D2BEE /* MainTabbarViewController.swift */; };
+		04A74AA7297D942D005D2BEE /* SleepControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A74AA6297D942D005D2BEE /* SleepControlViewController.swift */; };
+		04A74AA9297D9451005D2BEE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A74AA8297D9451005D2BEE /* HomeViewController.swift */; };
+		04A74AAB297D945F005D2BEE /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A74AAA297D945F005D2BEE /* InfoViewController.swift */; };
+		04A74AAD297D9477005D2BEE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A74AAC297D9477005D2BEE /* ProfileViewController.swift */; };
 		04F73A69297AF538007C6927 /* SignUpNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F73A68297AF538007C6927 /* SignUpNameViewController.swift */; };
 		04F73A6B297B2A22007C6927 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F73A6A297B2A22007C6927 /* Logger.swift */; };
 		04F73A6F297B2A38007C6927 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F73A6D297B2A38007C6927 /* Date.swift */; };
@@ -56,6 +61,11 @@
 		04783C2A297BC7D300A3A4AC /* InformationSearchingAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = InformationSearchingAnimation.json; sourceTree = "<group>"; };
 		04783C2D297BCF9000A3A4AC /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		04783C2F297BD10300A3A4AC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		04A74AA3297D93CC005D2BEE /* MainTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarViewController.swift; sourceTree = "<group>"; };
+		04A74AA6297D942D005D2BEE /* SleepControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepControlViewController.swift; sourceTree = "<group>"; };
+		04A74AA8297D9451005D2BEE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		04A74AAA297D945F005D2BEE /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		04A74AAC297D9477005D2BEE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		04F73A68297AF538007C6927 /* SignUpNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpNameViewController.swift; sourceTree = "<group>"; };
 		04F73A6A297B2A22007C6927 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		04F73A6D297B2A38007C6927 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
@@ -161,12 +171,8 @@
 		0421BE4D29718C70001237C9 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				041783362976B5F30038EF40 /* AuthorizationNavigationController.swift */,
-				0421BE3929718A53001237C9 /* CarouselViewController.swift */,
-				041783382976CB110038EF40 /* LoginViewController.swift */,
-				04F73A68297AF538007C6927 /* SignUpNameViewController.swift */,
-				04F73A71297B2BAA007C6927 /* SignUpAdditionViewController.swift */,
-				04783C28297BC76700A3A4AC /* LoadingViewController.swift */,
+				04A74AA1297D9309005D2BEE /* Authorization */,
+				04A74AA2297D9318005D2BEE /* Main */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -205,6 +211,31 @@
 				04783C2D297BCF9000A3A4AC /* UIView.swift */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		04A74AA1297D9309005D2BEE /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				041783362976B5F30038EF40 /* AuthorizationNavigationController.swift */,
+				0421BE3929718A53001237C9 /* CarouselViewController.swift */,
+				041783382976CB110038EF40 /* LoginViewController.swift */,
+				04F73A68297AF538007C6927 /* SignUpNameViewController.swift */,
+				04F73A71297B2BAA007C6927 /* SignUpAdditionViewController.swift */,
+				04783C28297BC76700A3A4AC /* LoadingViewController.swift */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		04A74AA2297D9318005D2BEE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				04A74AA3297D93CC005D2BEE /* MainTabbarViewController.swift */,
+				04A74AA6297D942D005D2BEE /* SleepControlViewController.swift */,
+				04A74AA8297D9451005D2BEE /* HomeViewController.swift */,
+				04A74AAA297D945F005D2BEE /* InfoViewController.swift */,
+				04A74AAC297D9477005D2BEE /* ProfileViewController.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		04F73A6C297B2A38007C6927 /* Foundation */ = {
@@ -349,6 +380,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				04783C2E297BCF9000A3A4AC /* UIView.swift in Sources */,
+				04A74AA4297D93CC005D2BEE /* MainTabbarViewController.swift in Sources */,
+				04A74AA7297D942D005D2BEE /* SleepControlViewController.swift in Sources */,
 				04F73A70297B2A38007C6927 /* Double.swift in Sources */,
 				041783342975F35D0038EF40 /* IndicatorCollectionViewCell.swift in Sources */,
 				0417833B2976CE800038EF40 /* SKTextField.swift in Sources */,
@@ -356,6 +389,7 @@
 				04F73A6F297B2A38007C6927 /* Date.swift in Sources */,
 				041783262975BA4F0038EF40 /* CarouselItemCollectionViewCell.swift in Sources */,
 				0417832E2975E86C0038EF40 /* CarouselItem.swift in Sources */,
+				04A74AAD297D9477005D2BEE /* ProfileViewController.swift in Sources */,
 				041783282975C50F0038EF40 /* DefaultWhiteButton.swift in Sources */,
 				04F73A72297B2BAA007C6927 /* SignUpAdditionViewController.swift in Sources */,
 				041783302975EA2B0038EF40 /* Screen.swift in Sources */,
@@ -366,8 +400,10 @@
 				04F73A6B297B2A22007C6927 /* Logger.swift in Sources */,
 				0421BE3629718A53001237C9 /* AppDelegate.swift in Sources */,
 				041783242975B1A80038EF40 /* CarouselView.swift in Sources */,
+				04A74AA9297D9451005D2BEE /* HomeViewController.swift in Sources */,
 				041783392976CB110038EF40 /* LoginViewController.swift in Sources */,
 				0421BE3829718A53001237C9 /* SceneDelegate.swift in Sources */,
+				04A74AAB297D945F005D2BEE /* InfoViewController.swift in Sources */,
 				04783C30297BD10300A3A4AC /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
