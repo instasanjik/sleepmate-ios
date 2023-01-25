@@ -62,7 +62,7 @@ class SignUpAdditionViewController: UIViewController {
 
 extension SignUpAdditionViewController {
     
-    func setupLogoImageView() {
+    fileprivate func setupLogoImageView() {
         view.addSubview(logoImageView)
         logoImageView.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide).inset(48)
@@ -72,7 +72,7 @@ extension SignUpAdditionViewController {
         }
     }
     
-    func setupGreetingLabel() {
+    fileprivate func setupGreetingLabel() {
         view.addSubview(greetingLabel)
         greetingLabel.snp.makeConstraints { make in
             make.left.equalTo(view).offset(40)
@@ -81,7 +81,7 @@ extension SignUpAdditionViewController {
         }
     }
     
-    func setupSignUpFormView() {
+    fileprivate func setupSignUpFormView() {
         view.addSubview(formSuperView)
         formSuperView.snp.makeConstraints { make in
             make.center.equalTo(view)
@@ -93,7 +93,7 @@ extension SignUpAdditionViewController {
         setupSignUpButton()
     }
     
-    func setupUsernameTextField() {
+    fileprivate func setupUsernameTextField() {
         formSuperView.addSubview(usernameTextField)
         usernameTextField.snp.makeConstraints { make in
             make.left.centerX.top.equalToSuperview()
@@ -101,7 +101,7 @@ extension SignUpAdditionViewController {
         }
     }
     
-    func setupPasswordTextField() {
+    fileprivate func setupPasswordTextField() {
         formSuperView.addSubview(passwordTextField)
         passwordTextField.snp.makeConstraints { make in
             make.top.equalTo(usernameTextField.snp.bottom).inset(-24)
@@ -110,7 +110,7 @@ extension SignUpAdditionViewController {
         }
     }
     
-    func setupSignUpButton() {
+    fileprivate func setupSignUpButton() {
         formSuperView.addSubview(signUpButton)
         signUpButton.setupTitle(text: "SIGN UP")
         signUpButton.addTarget(self, action: #selector(signUpTapped), for: .touchUpInside)

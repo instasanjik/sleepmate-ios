@@ -54,7 +54,7 @@ class SignUpNameViewController: UIViewController {
 
 extension SignUpNameViewController {
     
-    func setupNameTextField() {
+    fileprivate func setupNameTextField() {
         view.addSubview(nameTextField)
         nameTextField.snp.makeConstraints { make in
             make.left.equalTo(view).offset(24)
@@ -64,7 +64,7 @@ extension SignUpNameViewController {
         }
     }
     
-    func setupContinueButton() {
+    fileprivate func setupContinueButton() {
         view.addSubview(continueButton)
         continueButton.addTarget(self, action: #selector(continueTapped), for: .touchUpInside)
         continueButton.setupTitle(text: "CONTINUE")
@@ -77,7 +77,7 @@ extension SignUpNameViewController {
         }
     }
     
-    func setupLogoImageView() {
+    fileprivate func setupLogoImageView() {
         view.addSubview(logoImageView)
         logoImageView.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide).inset(48)
@@ -87,7 +87,7 @@ extension SignUpNameViewController {
         }
     }
     
-    func setupGreetingLabel() {
+    fileprivate func setupGreetingLabel() {
         view.addSubview(greetingLabel)
         greetingLabel.snp.makeConstraints { make in
             make.left.equalTo(view).offset(40)

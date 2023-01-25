@@ -86,7 +86,7 @@ class LoginViewController: UIViewController {
 
 extension LoginViewController {
     
-    func setupUsernameTextField() {
+    fileprivate func setupUsernameTextField() {
         view.addSubview(usernameTextField)
         usernameTextField.snp.makeConstraints { make in
             make.centerX.equalTo(view)
@@ -96,7 +96,7 @@ extension LoginViewController {
         }
     }
     
-    func setupPasswordTextField() {
+    fileprivate func setupPasswordTextField() {
         view.addSubview(passwordTextField)
         passwordTextField.snp.makeConstraints { make in
             make.centerX.equalTo(view)
@@ -106,7 +106,7 @@ extension LoginViewController {
         }
     }
     
-    func setupForgotPasswordLabel() {
+    fileprivate func setupForgotPasswordLabel() {
         view.addSubview(forgotPassowordLabel)
         forgotPassowordLabel.snp.makeConstraints { make in
             make.left.equalTo(view).offset(24)
@@ -114,7 +114,7 @@ extension LoginViewController {
         }
     }
     
-    func setupLogoImageView() {
+    fileprivate func setupLogoImageView() {
         let logoSuperview = UIView()
         logoSuperview.backgroundColor = .clear
         
@@ -131,7 +131,7 @@ extension LoginViewController {
         }
     }
     
-    func setupLoginButton() {
+    fileprivate func setupLoginButton() {
         view.addSubview(loginButton)
         loginButton.snp.makeConstraints { make in
             make.top.equalTo(forgotPassowordLabel.snp.bottom).offset(64)
@@ -141,7 +141,7 @@ extension LoginViewController {
         }
     }
     
-    func setupSignUpLabels() {
+    fileprivate func setupSignUpLabels() {
         view.addSubview(signUpLabel)
         signUpLabel.snp.makeConstraints { make in
             make.left.equalTo(loginButton)

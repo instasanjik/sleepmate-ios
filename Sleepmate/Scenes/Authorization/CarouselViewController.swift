@@ -35,7 +35,7 @@ class CarouselViewController: UIViewController {
 
 extension CarouselViewController {
     
-    func setupLogo() {
+    fileprivate func setupLogo() {
         view.addSubview(logoImageView)
         logoImageView.snp.makeConstraints { make in
             make.centerX.equalTo(view)
@@ -43,7 +43,7 @@ extension CarouselViewController {
         }
     }
     
-    func setupContinueButton() {
+    fileprivate func setupContinueButton() {
         view.addSubview(continueButton)
         continueButton.addTarget(self, action: #selector(continueTapped), for: .touchUpInside)
         continueButton.disable()
@@ -56,7 +56,7 @@ extension CarouselViewController {
         continueButton.setupTitle(text: "CONTINUE")
     }
     
-    func setupCarouselView() {
+    fileprivate func setupCarouselView() {
         view.addSubview(carouselView)
         carouselView.delegate = self
         carouselView.snp.makeConstraints { make in

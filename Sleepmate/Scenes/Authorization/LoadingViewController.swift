@@ -23,7 +23,7 @@ class LoadingViewController: UIViewController {
 
 extension LoadingViewController {
     
-    func setupAnimationView() {
+    fileprivate func setupAnimationView() {
         view.addSubview(infomarionSearchingAnimation)
         infomarionSearchingAnimation.play()
         infomarionSearchingAnimation.loopMode = .loop
