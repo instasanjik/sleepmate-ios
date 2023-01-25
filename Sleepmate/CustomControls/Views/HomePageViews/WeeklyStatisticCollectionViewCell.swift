@@ -6,7 +6,75 @@
 //
 
 import UIKit
+import SnapKit
 
 class WeeklyStatisticCollectionViewCell: UICollectionViewCell {
+    
+    var statistic: DailyStatistic? {
+        didSet {
+            guard let statistic = statistic else { return }
+            setData(statistic)
+            print(statistic.sleepDuration)
+        }
+    }
+    
+    lazy var circularProgressBarView = CircularProgressBarView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+    
+    lazy var weekDayLabel: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 12)
+        label.textAlignment = .center
+        label.text = "Th"
+        return label
+    }()
+    
+    override func awakeFromNib() {
+        backgroundColor = .clear
+    }
+    
+    override func draw(_ rect: CGRect) {
+        setupProgressBarView()
+        setupWeekDayLabel()
+        super.draw(rect)
+    }
+    
+    
+    override func prepareForReuse() {
+        layoutIfNeeded()
+        super.prepareForReuse()
+    }
+    
+    fileprivate func setData(_ statistic: DailyStatistic) {
+        self.circularProgressBarView.progressAnimation(duration: 1,
+                                                       newValue: Float(statistic.sleepDuration)/8,
+                                                       centerLabelText: "\(Int(statistic.sleepDuration))h")
+    }
+    
+    
+}
+
+
+extension WeeklyStatisticCollectionViewCell {
+    
+    fileprivate func setupProgressBarView() {
+        addSubview(circularProgressBarView)
+        circularProgressBarView.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.top.equalToSuperview().inset(4)
+            make.height.width.equalTo(40)
+        }
+        layoutIfNeeded()
+        circularProgressBarView.createCircularPath(radius: 18, lineWidth: 6, fontSize: 12)
+    }
+    
+    fileprivate func setupWeekDayLabel() {
+        addSubview(weekDayLabel)
+        weekDayLabel.snp.makeConstraints { make in
+            make.centerX.equalTo(circularProgressBarView)
+            make.height.equalTo(18)
+            make.bottom.equalTo(self.snp.bottom)
+        }
+    }
+    
     
 }
