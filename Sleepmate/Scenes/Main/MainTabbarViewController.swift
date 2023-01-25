@@ -13,6 +13,7 @@ class MainTabbarViewController: UITabBarController {
         super.viewDidLoad()
         configureViewControllers()
         updateTabbarUI()
+        print(Date.now.dayOfWeek)
         selectedIndex = 1
     }
     
@@ -23,6 +24,9 @@ extension MainTabbarViewController {
     
     func updateTabbarUI() {
         tabBar.tintColor = ColorPalette.yellow
+        tabBar.barTintColor = .clear
+        tabBar.backgroundImage = UIImage()
+        tabBar.shadowImage = UIImage()
         
         let positionX: CGFloat = 24
         let positionY: CGFloat = 8
