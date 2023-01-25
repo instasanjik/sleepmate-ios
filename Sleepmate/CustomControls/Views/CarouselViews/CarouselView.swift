@@ -76,7 +76,7 @@ class CarouselView: UIView {
 
 extension CarouselView {
     
-    func setupCollectionView() {
+    fileprivate func setupCollectionView() {
         addSubview(carouselCollectionView)
         carouselCollectionView.snp.makeConstraints { make in
             make.top.left.right.equalTo(self)
@@ -84,7 +84,7 @@ extension CarouselView {
         }
     }
     
-    func setupIndicatorsView() {
+    fileprivate func setupIndicatorsView() {
         addSubview(indicatorsCollectionView)
         indicatorsCollectionView.snp.makeConstraints { make in
             make.bottom.equalTo(self).inset(24)

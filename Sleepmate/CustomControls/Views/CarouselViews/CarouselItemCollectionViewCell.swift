@@ -41,14 +41,14 @@ class CarouselItemCollectionViewCell: UICollectionViewCell {
 
 extension CarouselItemCollectionViewCell {
     
-    func setupImageView() {
+    fileprivate func setupImageView() {
         addSubview(imageView)
         imageView.snp.makeConstraints { make in
             make.centerX.top.left.equalTo(self)
         }
     }
     
-    func setupBodyLabel() {
+    fileprivate func setupBodyLabel() {
         addSubview(bodyLabel)
         bodyLabel.snp.makeConstraints { make in
             make.centerX.equalTo(imageView)
