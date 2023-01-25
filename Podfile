@@ -8,7 +8,6 @@ target 'Sleepmate' do
   # Pods for Sleepmate
   pod 'lottie-ios' 	          # lottie files playing pod
   pod 'SnapKit' 	            # auto-layout pod
-  pod 'MBCircularProgressBar' # circular progress view
   pod 'Alamofire'             # api requests framework
   pod 'SwiftyJSON'            # json framework
 end

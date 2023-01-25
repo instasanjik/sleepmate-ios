@@ -1,6 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-Sleepmate/Pods-Sleepmate-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
-${BUILT_PRODUCTS_DIR}/MBCircularProgressBar/MBCircularProgressBar.framework
 ${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
 ${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework
 ${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework

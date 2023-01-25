@@ -1,14 +1,12 @@
 PODS:
   - Alamofire (5.6.2)
   - lottie-ios (4.0.1)
-  - MBCircularProgressBar (0.3.5)
   - SnapKit (5.6.0)
   - SwiftyJSON (5.0.1)
 
 DEPENDENCIES:
   - Alamofire
   - lottie-ios
-  - MBCircularProgressBar
   - SnapKit
   - SwiftyJSON
 
@@ -16,17 +14,15 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - lottie-ios
-    - MBCircularProgressBar
     - SnapKit
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
   lottie-ios: 54d22edf55b839f0929cabbfe609c9aa548b1145
-  MBCircularProgressBar: 0b795b722a5eb5b0923822f90474e2576a1a7855
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: 21a34096ad9c7099ea904b59cf0b716cfe56bcc3
+PODFILE CHECKSUM: f486ce6200640dc2d74f42b2a4593f278c18c30a
 
 COCOAPODS: 1.11.3
