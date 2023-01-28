@@ -38,7 +38,7 @@ class CircularProgressBarView: UIView {
 
 extension CircularProgressBarView {
     
-    func createCircularPath(radius: CGFloat = 20, lineWidth: CGFloat = 8, fontSize: Int) {
+    func createCircularPath(radius: CGFloat = 20, lineWidth: CGFloat = 8, fontSize: CGFloat = 12) {
         let circularPath = UIBezierPath(arcCenter: CGPoint(x: frame.size.width / 2.0,
                                                            y: frame.size.height / 2.0),
                                         radius: radius,
@@ -62,7 +62,7 @@ extension CircularProgressBarView {
         layer.addSublayer(progressLayer)
 
         addSubview(centerValueLabel)
-        centerValueLabel.font = UIFont.systemFont(ofSize: CGFloat(fontSize))
+        centerValueLabel.font = UIFont.systemFont(ofSize: fontSize)
         centerValueLabel.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }

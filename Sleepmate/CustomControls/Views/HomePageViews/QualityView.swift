@@ -66,7 +66,7 @@ extension QualityView {
             make.width.equalTo(circularProgressBarView.snp.height)
         }
         layoutIfNeeded()
-        circularProgressBarView.createCircularPath(radius: 48, lineWidth: 14, fontSize: 22)
+        circularProgressBarView.createCircularPath(radius: 48, lineWidth: 14)
         circularProgressBarView.centerValueLabel.font = UIFont.systemFont(ofSize: 22, weight: .semibold)
     }
     
