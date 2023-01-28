@@ -34,6 +34,7 @@ class HomeViewController: UIViewController {
     
     lazy var weeklyStatisticsView = WeeklyStatisticView()
     lazy var averageSleepTimeView = AverageSleepTimeView()
+    lazy var qualityView = QualityView()
     
     lazy var calendarButton: UIButton = {
         let button = UIButton()
@@ -52,6 +53,7 @@ class HomeViewController: UIViewController {
             if statusCode == 200 {
                 self.weeklyStatisticsView.statistics = body as! [DailyStatistic]
                 self.averageSleepTimeView.hoursValue = "6.2"
+                self.qualityView.quality = 65
             } else {
                 fatalError("Temporary test")
             }
@@ -74,6 +76,7 @@ extension HomeViewController {
         
         setupWeeklyStatisticsView()
         setupAverageSleepTimeView()
+        setupQualityView()
     }
     
     fileprivate func setupScrollView() {
@@ -121,9 +124,20 @@ extension HomeViewController {
     fileprivate func setupAverageSleepTimeView() {
         scrollView.addSubview(averageSleepTimeView)
         averageSleepTimeView.snp.makeConstraints { make in
-            make.left.equalTo(weeklyStatisticsView)
             make.top.equalTo(weeklyStatisticsView.snp.bottom).inset(-24)
-            make.height.width.equalTo(160)
+            make.left.equalTo(weeklyStatisticsView)
+            make.right.equalTo(scrollView.snp.centerX).offset(-12)
+            make.height.equalTo(averageSleepTimeView.snp.width)
+        }
+    }
+    
+    fileprivate func setupQualityView() {
+        scrollView.addSubview(qualityView)
+        qualityView.snp.makeConstraints { make in
+            make.top.equalTo(weeklyStatisticsView.snp.bottom).inset(-24)
+            make.left.equalTo(scrollView.snp.centerX).offset(12)
+            make.right.equalTo(weeklyStatisticsView)
+            make.height.equalTo(qualityView.snp.width)
         }
     }
     
