@@ -14,7 +14,6 @@ class WeeklyStatisticCollectionViewCell: UICollectionViewCell {
         didSet {
             guard let statistic = statistic else { return }
             setData(statistic)
-            print(statistic.sleepDuration)
         }
     }
     
@@ -24,7 +23,6 @@ class WeeklyStatisticCollectionViewCell: UICollectionViewCell {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 12)
         label.textAlignment = .center
-        label.text = "Th"
         return label
     }()
     
@@ -48,6 +46,7 @@ class WeeklyStatisticCollectionViewCell: UICollectionViewCell {
         self.circularProgressBarView.progressAnimation(duration: 1,
                                                        newValue: Float(statistic.sleepDuration)/8,
                                                        centerLabelText: "\(Int(statistic.sleepDuration))h")
+        self.weekDayLabel.text = statistic.date.dayOfWeek
     }
     
     
