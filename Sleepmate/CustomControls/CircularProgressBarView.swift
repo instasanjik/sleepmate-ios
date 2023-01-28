@@ -62,6 +62,7 @@ extension CircularProgressBarView {
         layer.addSublayer(progressLayer)
 
         addSubview(centerValueLabel)
+        centerValueLabel.font = UIFont.systemFont(ofSize: CGFloat(fontSize))
         centerValueLabel.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
