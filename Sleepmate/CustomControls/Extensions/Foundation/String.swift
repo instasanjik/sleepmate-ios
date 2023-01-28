@@ -71,7 +71,7 @@ extension String {
         var stringFormat:String {
             switch self {
                 //handle iso Time
-            case .birthDateFormatOne: return "dd/MM/YYYY"
+            case .birthDateFormatOne: return "dd/MM/yyyy"
             case .birthDateFormatTwo: return "dd-MM-YYYY"
             case .isoYear: return "yyyy"
             case .isoYearMonth: return "yyyy-MM"
