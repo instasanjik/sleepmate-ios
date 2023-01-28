@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class WeeklyStatisticView: UIView {
+class WeeklyStatisticView: SKCardView {
     
     var statistics: [DailyStatistic] = [] {
         didSet {
@@ -33,7 +33,6 @@ class WeeklyStatisticView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        updateUI()
     }
     
     override func draw(_ rect: CGRect) {
@@ -52,12 +51,6 @@ class WeeklyStatisticView: UIView {
 
 
 extension WeeklyStatisticView {
-    
-    fileprivate func updateUI() {
-        backgroundColor = ColorPalette.blue
-        layer.cornerRadius = 16
-        layer.masksToBounds = true
-    }
     
     fileprivate func setupStatisticCollectionView() {
         addSubview(statisticsCollectionView)

@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class AverageSleepTimeView: UIView {
+class AverageSleepTimeView: SKCardView {
     
     var hoursValue: String = "-" {
         didSet {
@@ -48,9 +48,6 @@ class AverageSleepTimeView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = ColorPalette.blue
-        layer.cornerRadius = 16
-        layer.masksToBounds = true
     }
     
     override func draw(_ rect: CGRect) {

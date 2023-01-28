@@ -31,6 +31,8 @@
 		0459E9052981DEF200A60D1E /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459E9042981DEF200A60D1E /* UICollectionView.swift */; };
 		047221F82985A562009E1EE8 /* AverageSleepTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047221F72985A562009E1EE8 /* AverageSleepTimeView.swift */; };
 		047221FC2985B371009E1EE8 /* QualityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047221FB2985B371009E1EE8 /* QualityView.swift */; };
+		047222002985BAA4009E1EE8 /* LastSleepInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047221FF2985BAA4009E1EE8 /* LastSleepInfoView.swift */; };
+		047222022985BAFA009E1EE8 /* SKCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047222012985BAFA009E1EE8 /* SKCardView.swift */; };
 		04783C29297BC76700A3A4AC /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04783C28297BC76700A3A4AC /* LoadingViewController.swift */; };
 		04783C2B297BC7D300A3A4AC /* InformationSearchingAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 04783C2A297BC7D300A3A4AC /* InformationSearchingAnimation.json */; };
 		04783C2E297BCF9000A3A4AC /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04783C2D297BCF9000A3A4AC /* UIView.swift */; };
@@ -76,6 +78,8 @@
 		0459E9042981DEF200A60D1E /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
 		047221F72985A562009E1EE8 /* AverageSleepTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageSleepTimeView.swift; sourceTree = "<group>"; };
 		047221FB2985B371009E1EE8 /* QualityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QualityView.swift; sourceTree = "<group>"; };
+		047221FF2985BAA4009E1EE8 /* LastSleepInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastSleepInfoView.swift; sourceTree = "<group>"; };
+		047222012985BAFA009E1EE8 /* SKCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKCardView.swift; sourceTree = "<group>"; };
 		04783C28297BC76700A3A4AC /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		04783C2A297BC7D300A3A4AC /* InformationSearchingAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = InformationSearchingAnimation.json; sourceTree = "<group>"; };
 		04783C2D297BCF9000A3A4AC /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
@@ -206,6 +210,7 @@
 				041783272975C50F0038EF40 /* DefaultWhiteButton.swift */,
 				0421BE4B29718C61001237C9 /* Views */,
 				0421BE5029719135001237C9 /* Extensions */,
+				047222012985BAFA009E1EE8 /* SKCardView.swift */,
 			);
 			path = CustomControls;
 			sourceTree = "<group>";
@@ -279,6 +284,7 @@
 				0459E8F9297DBE1B00A60D1E /* WeeklyStatisticCollectionViewCell.swift */,
 				047221F72985A562009E1EE8 /* AverageSleepTimeView.swift */,
 				047221FB2985B371009E1EE8 /* QualityView.swift */,
+				047221FF2985BAA4009E1EE8 /* LastSleepInfoView.swift */,
 			);
 			path = HomePageViews;
 			sourceTree = "<group>";
@@ -447,6 +453,7 @@
 				04F73A72297B2BAA007C6927 /* SignUpAdditionViewController.swift in Sources */,
 				041783302975EA2B0038EF40 /* Screen.swift in Sources */,
 				041783372976B5F30038EF40 /* AuthorizationNavigationController.swift in Sources */,
+				047222022985BAFA009E1EE8 /* SKCardView.swift in Sources */,
 				0459E9032981CE5000A60D1E /* CircularProgressBarView.swift in Sources */,
 				04783C29297BC76700A3A4AC /* LoadingViewController.swift in Sources */,
 				04F73A69297AF538007C6927 /* SignUpNameViewController.swift in Sources */,
@@ -458,6 +465,7 @@
 				041783392976CB110038EF40 /* LoginViewController.swift in Sources */,
 				04A74AB2297DB802005D2BEE /* WeeklyStatisticView.swift in Sources */,
 				0421BE3829718A53001237C9 /* SceneDelegate.swift in Sources */,
+				047222002985BAA4009E1EE8 /* LastSleepInfoView.swift in Sources */,
 				04A74AAB297D945F005D2BEE /* InfoViewController.swift in Sources */,
 				0459E9012981A90900A60D1E /* String.swift in Sources */,
 				04783C30297BD10300A3A4AC /* User.swift in Sources */,

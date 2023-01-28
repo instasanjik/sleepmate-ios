@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class QualityView: UIView {
+class QualityView: SKCardView {
     
     var quality: Float = 0 {
         didSet {
@@ -30,9 +30,6 @@ class QualityView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = ColorPalette.blue
-        layer.cornerRadius = 16
-        layer.masksToBounds = true
     }
     
     override func draw(_ rect: CGRect) {
