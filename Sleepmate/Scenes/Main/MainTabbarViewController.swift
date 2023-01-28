@@ -13,7 +13,6 @@ class MainTabbarViewController: UITabBarController {
         super.viewDidLoad()
         configureViewControllers()
         updateTabbarUI()
-        print(Date.now.dayOfWeek)
         selectedIndex = 1
     }
     
