@@ -34,15 +34,6 @@ class WeeklyStatisticView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         updateUI()
-        
-        
-        Server.shared.getStatistics { statusCode, body in
-            if statusCode == 200 {
-                self.statistics = body as! [DailyStatistic]
-            } else {
-                fatalError("Temporary test")
-            }
-        }
     }
     
     override func draw(_ rect: CGRect) {
@@ -95,7 +86,7 @@ extension WeeklyStatisticView: UICollectionViewDelegate, UICollectionViewDataSou
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 45, height: 68)
+        return CGSize(width: 52, height: 72)
     }
     
     

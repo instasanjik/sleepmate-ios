@@ -17,7 +17,7 @@ class WeeklyStatisticCollectionViewCell: UICollectionViewCell {
         }
     }
     
-    lazy var circularProgressBarView = CircularProgressBarView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+    lazy var circularProgressBarView = CircularProgressBarView(frame: CGRect(x: 0, y: 0, width: 46, height: 46))
     
     lazy var weekDayLabel: UILabel = {
         let label = UILabel()
@@ -60,10 +60,10 @@ extension WeeklyStatisticCollectionViewCell {
         circularProgressBarView.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.top.equalToSuperview().inset(4)
-            make.height.width.equalTo(40)
+            make.height.width.equalTo(46)
         }
         layoutIfNeeded()
-        circularProgressBarView.createCircularPath(radius: 18, lineWidth: 6, fontSize: 12)
+        circularProgressBarView.createCircularPath(radius: 20, lineWidth: 6, fontSize: 12)
     }
     
     fileprivate func setupWeekDayLabel() {

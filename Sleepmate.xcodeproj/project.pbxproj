@@ -29,6 +29,7 @@
 		0459E9012981A90900A60D1E /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459E9002981A90900A60D1E /* String.swift */; };
 		0459E9032981CE5000A60D1E /* CircularProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459E9022981CE5000A60D1E /* CircularProgressBarView.swift */; };
 		0459E9052981DEF200A60D1E /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0459E9042981DEF200A60D1E /* UICollectionView.swift */; };
+		047221F82985A562009E1EE8 /* AverageSleepTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047221F72985A562009E1EE8 /* AverageSleepTimeView.swift */; };
 		04783C29297BC76700A3A4AC /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04783C28297BC76700A3A4AC /* LoadingViewController.swift */; };
 		04783C2B297BC7D300A3A4AC /* InformationSearchingAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 04783C2A297BC7D300A3A4AC /* InformationSearchingAnimation.json */; };
 		04783C2E297BCF9000A3A4AC /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04783C2D297BCF9000A3A4AC /* UIView.swift */; };
@@ -72,6 +73,7 @@
 		0459E9002981A90900A60D1E /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		0459E9022981CE5000A60D1E /* CircularProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBarView.swift; sourceTree = "<group>"; };
 		0459E9042981DEF200A60D1E /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
+		047221F72985A562009E1EE8 /* AverageSleepTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageSleepTimeView.swift; sourceTree = "<group>"; };
 		04783C28297BC76700A3A4AC /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		04783C2A297BC7D300A3A4AC /* InformationSearchingAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = InformationSearchingAnimation.json; sourceTree = "<group>"; };
 		04783C2D297BCF9000A3A4AC /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
@@ -273,6 +275,7 @@
 			children = (
 				04A74AB1297DB802005D2BEE /* WeeklyStatisticView.swift */,
 				0459E8F9297DBE1B00A60D1E /* WeeklyStatisticCollectionViewCell.swift */,
+				047221F72985A562009E1EE8 /* AverageSleepTimeView.swift */,
 			);
 			path = HomePageViews;
 			sourceTree = "<group>";
@@ -433,6 +436,7 @@
 				0459E8FC297DBE4400A60D1E /* Server.swift in Sources */,
 				041783262975BA4F0038EF40 /* CarouselItemCollectionViewCell.swift in Sources */,
 				0417832E2975E86C0038EF40 /* CarouselItem.swift in Sources */,
+				047221F82985A562009E1EE8 /* AverageSleepTimeView.swift in Sources */,
 				04A74AAD297D9477005D2BEE /* ProfileViewController.swift in Sources */,
 				041783282975C50F0038EF40 /* DefaultWhiteButton.swift in Sources */,
 				0459E9052981DEF200A60D1E /* UICollectionView.swift in Sources */,
