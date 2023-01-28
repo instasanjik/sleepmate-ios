@@ -25,12 +25,14 @@ class Server {
                     let json = JSON(data)
                     var statistics: [DailyStatistic] = []
                     for object in json.arrayValue {
-                        statistics.append(DailyStatistic(date: object["date"].stringValue.toDate(.birthDateFormatOne)!,
-                                                         sleepDuration: object["sleep-duration"].doubleValue,
-                                                         deepSleepDuration: object["deep-sleep-duration"].doubleValue,
-                                                         wakeUpCount: object["deep-sleep-count"].intValue,
-                                                         bedTime: object["bed-time"].stringValue.toDate(.isoDateTimeSec)!,
-                                                         wakeUpTime: object["bed-time"].stringValue.toDate(.isoDateTimeSec)!))
+                        statistics.append(
+                            DailyStatistic(  date: object["date"].stringValue.toDate(.birthDateFormatOne)!,
+                                             sleepDuration: object["sleep-duration"].doubleValue,
+                                             deepSleepDuration: object["deep-sleep-duration"].doubleValue,
+                                             wakeUpCount: object["deep-sleep-count"].intValue,
+                                             bedTime: object["bed-time"].stringValue.toDate(.isoDateTimeSec)!,
+                                             wakeUpTime: object["wake-up-time"].stringValue.toDate(.isoDateTimeSec)!)
+                        )
                     }
                     completionHandler(200, statistics)
                 }
