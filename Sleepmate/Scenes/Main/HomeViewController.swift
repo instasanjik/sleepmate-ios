@@ -32,15 +32,8 @@ class HomeViewController: UIViewController {
         return label
     }()
     
-    
-    
-    lazy var circularProgressBarView: CircularProgressBarView = {
-        let progressBar = CircularProgressBarView()
-        progressBar.backgroundColor = .red
-        return progressBar
-    }()
-    
     lazy var weeklyStatisticsView = WeeklyStatisticView()
+    lazy var averageSleepTimeView = AverageSleepTimeView()
     
     lazy var calendarButton: UIButton = {
         let button = UIButton()
@@ -52,6 +45,17 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
+        
+        
+        
+        Server.shared.getStatistics { statusCode, body in
+            if statusCode == 200 {
+                self.weeklyStatisticsView.statistics = body as! [DailyStatistic]
+                self.averageSleepTimeView.hoursValue = "6.2"
+            } else {
+                fatalError("Temporary test")
+            }
+        }
     }
     
 
@@ -69,6 +73,7 @@ extension HomeViewController {
         setupCalendarButton()
         
         setupWeeklyStatisticsView()
+        setupAverageSleepTimeView()
     }
     
     fileprivate func setupScrollView() {
@@ -108,8 +113,17 @@ extension HomeViewController {
         weeklyStatisticsView.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.top.equalTo(dateLabel.snp.bottom).inset(-24)
-            make.height.equalTo(96)
+            make.height.equalTo(92)
             make.left.equalTo(dateLabel)
+        }
+    }
+    
+    fileprivate func setupAverageSleepTimeView() {
+        scrollView.addSubview(averageSleepTimeView)
+        averageSleepTimeView.snp.makeConstraints { make in
+            make.left.equalTo(weeklyStatisticsView)
+            make.top.equalTo(weeklyStatisticsView.snp.bottom).inset(-24)
+            make.height.width.equalTo(160)
         }
     }
     
