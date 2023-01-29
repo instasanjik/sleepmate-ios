@@ -21,7 +21,7 @@ class AverageSleepTimeView: SKCardView {
         label.text = "Average \nsleep time \nthis week"
         label.numberOfLines = 3
         label.textColor = ColorPalette.white
-        label.font = UIFont.systemFont(ofSize: 14)
+        label.font = UIFont.systemFont(ofSize: 18, weight: .medium)
         return label
     }()
     
