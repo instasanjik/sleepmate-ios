@@ -35,6 +35,7 @@ class HomeViewController: UIViewController {
     lazy var weeklyStatisticsView = WeeklyStatisticView()
     lazy var averageSleepTimeView = AverageSleepTimeView()
     lazy var qualityView = QualityView()
+    lazy var lastSleppInfoView = LastSleepInfoView()
     
     lazy var calendarButton: UIButton = {
         let button = UIButton()
@@ -77,6 +78,7 @@ extension HomeViewController {
         setupWeeklyStatisticsView()
         setupAverageSleepTimeView()
         setupQualityView()
+        setupLastSleepInfoView()
     }
     
     fileprivate func setupScrollView() {
@@ -138,6 +140,15 @@ extension HomeViewController {
             make.left.equalTo(scrollView.snp.centerX).offset(12)
             make.right.equalTo(weeklyStatisticsView)
             make.height.equalTo(qualityView.snp.width)
+        }
+    }
+    
+    fileprivate func setupLastSleepInfoView() {
+        scrollView.addSubview(lastSleppInfoView)
+        lastSleppInfoView.snp.makeConstraints { make in
+            make.top.equalTo(qualityView.snp.bottom).inset(-24)
+            make.left.right.equalTo(weeklyStatisticsView)
+            make.height.equalTo(178)
         }
     }
     
