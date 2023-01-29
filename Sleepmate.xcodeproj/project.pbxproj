@@ -33,6 +33,7 @@
 		047221FC2985B371009E1EE8 /* QualityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047221FB2985B371009E1EE8 /* QualityView.swift */; };
 		047222002985BAA4009E1EE8 /* LastSleepInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047221FF2985BAA4009E1EE8 /* LastSleepInfoView.swift */; };
 		047222022985BAFA009E1EE8 /* SKCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047222012985BAFA009E1EE8 /* SKCardView.swift */; };
+		0472220429866F92009E1EE8 /* InfoBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0472220329866F92009E1EE8 /* InfoBlockView.swift */; };
 		04783C29297BC76700A3A4AC /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04783C28297BC76700A3A4AC /* LoadingViewController.swift */; };
 		04783C2B297BC7D300A3A4AC /* InformationSearchingAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 04783C2A297BC7D300A3A4AC /* InformationSearchingAnimation.json */; };
 		04783C2E297BCF9000A3A4AC /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04783C2D297BCF9000A3A4AC /* UIView.swift */; };
@@ -80,6 +81,7 @@
 		047221FB2985B371009E1EE8 /* QualityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QualityView.swift; sourceTree = "<group>"; };
 		047221FF2985BAA4009E1EE8 /* LastSleepInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastSleepInfoView.swift; sourceTree = "<group>"; };
 		047222012985BAFA009E1EE8 /* SKCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKCardView.swift; sourceTree = "<group>"; };
+		0472220329866F92009E1EE8 /* InfoBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoBlockView.swift; sourceTree = "<group>"; };
 		04783C28297BC76700A3A4AC /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		04783C2A297BC7D300A3A4AC /* InformationSearchingAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = InformationSearchingAnimation.json; sourceTree = "<group>"; };
 		04783C2D297BCF9000A3A4AC /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
@@ -285,6 +287,7 @@
 				047221F72985A562009E1EE8 /* AverageSleepTimeView.swift */,
 				047221FB2985B371009E1EE8 /* QualityView.swift */,
 				047221FF2985BAA4009E1EE8 /* LastSleepInfoView.swift */,
+				0472220329866F92009E1EE8 /* InfoBlockView.swift */,
 			);
 			path = HomePageViews;
 			sourceTree = "<group>";
@@ -448,6 +451,7 @@
 				0417832E2975E86C0038EF40 /* CarouselItem.swift in Sources */,
 				047221F82985A562009E1EE8 /* AverageSleepTimeView.swift in Sources */,
 				04A74AAD297D9477005D2BEE /* ProfileViewController.swift in Sources */,
+				0472220429866F92009E1EE8 /* InfoBlockView.swift in Sources */,
 				041783282975C50F0038EF40 /* DefaultWhiteButton.swift in Sources */,
 				0459E9052981DEF200A60D1E /* UICollectionView.swift in Sources */,
 				04F73A72297B2BAA007C6927 /* SignUpAdditionViewController.swift in Sources */,
