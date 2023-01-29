@@ -1,11 +1,17 @@
 PODS:
   - Alamofire (5.6.2)
+  - Charts (4.1.0):
+    - Charts/Core (= 4.1.0)
+  - Charts/Core (4.1.0):
+    - SwiftAlgorithms (~> 1.0)
   - lottie-ios (4.0.1)
   - SnapKit (5.6.0)
+  - SwiftAlgorithms (1.0.0)
   - SwiftyJSON (5.0.1)
 
 DEPENDENCIES:
   - Alamofire
+  - Charts
   - lottie-ios
   - SnapKit
   - SwiftyJSON
@@ -13,16 +19,20 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Charts
     - lottie-ios
     - SnapKit
+    - SwiftAlgorithms
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  Charts: 354f86803d11d9c35de280587fef50d1af063978
   lottie-ios: 54d22edf55b839f0929cabbfe609c9aa548b1145
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SwiftAlgorithms: 38dda4731d19027fdeee1125f973111bf3386b53
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: f486ce6200640dc2d74f42b2a4593f278c18c30a
+PODFILE CHECKSUM: e65d11cc989abea547814d09ae483ed6b7806bcc
 
 COCOAPODS: 1.11.3

@@ -10,4 +10,5 @@ target 'Sleepmate' do
   pod 'SnapKit' 	            # auto-layout pod
   pod 'Alamofire'             # api requests framework
   pod 'SwiftyJSON'            # json framework
+  pod 'Charts'                # charts framework
 end
