@@ -22,7 +22,7 @@ class QualityView: SKCardView {
         let label = UILabel()
         label.text = "Quality"
         label.textColor = ColorPalette.white
-        label.font = UIFont.systemFont(ofSize: 14)
+        label.font = UIFont.systemFont(ofSize: 18, weight: .medium)
         return label
     }()
     
@@ -57,8 +57,8 @@ extension QualityView {
     fileprivate func setupCircularProgressBar() {
         addSubview(circularProgressBarView)
         circularProgressBarView.snp.makeConstraints { make in
-            make.top.equalTo(titleLabel).inset(20)
-            make.bottom.equalToSuperview().inset(20)
+            make.top.equalTo(titleLabel).inset(32)
+            make.bottom.equalToSuperview().inset(8)
             make.centerX.equalToSuperview()
             make.width.equalTo(circularProgressBarView.snp.height)
         }
