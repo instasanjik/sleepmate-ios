@@ -44,5 +44,16 @@ class Server {
         }
     }
     
+    func getExperts() -> [Expert] {
+        return [
+            Expert(name: "John", lastName: "Balantines", avatarLink: nil, gender: .man, shortDesctiprion: "12 years of experience, Sleep Analyst", workExpitience: 4319),
+            Expert(name: "Lawson", lastName: "William", avatarLink: nil, gender: .woman, shortDesctiprion: "8 years of experience, Sleep Analyst", workExpitience: 2920),
+            Expert(name: "Jameson", lastName: "Khortitsa", avatarLink: nil, gender: .man, shortDesctiprion: "10 years of experience, Sleep Analyst", workExpitience: 3650),
+            Expert(name: "John", lastName: "Balantines", avatarLink: nil, gender: .man, shortDesctiprion: "12 years of experience, Sleep Analyst", workExpitience: 4319),
+            Expert(name: "Lawson", lastName: "William", avatarLink: nil, gender: .woman, shortDesctiprion: "8 years of experience, Sleep Analyst", workExpitience: 2920),
+            ]
+        
+    }
+    
     
 }
