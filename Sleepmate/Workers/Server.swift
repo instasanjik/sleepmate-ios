@@ -17,6 +17,7 @@ class Server {
     
     init(){}
     
+    
     func getStatistics(completionHandler: @escaping(serverResponse)) {
         AF.request(URLs.STATISTIC, method: .get).responseData { response in
             switch response.response?.statusCode {
@@ -43,6 +44,7 @@ class Server {
             }
         }
     }
+    
     
     func getExperts() -> [Expert] {
         return [
