@@ -28,15 +28,18 @@ class QualityView: SKCardView {
     
     lazy var circularProgressBarView = CircularProgressBarView()
     
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
+    
     
     override func draw(_ rect: CGRect) {
         super.draw(rect)
         setupTitleLabel()
         setupCircularProgressBar()
     }
+    
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -53,6 +56,7 @@ extension QualityView {
             make.left.top.equalToSuperview().inset(16)
         }
     }
+    
     
     fileprivate func setupCircularProgressBar() {
         addSubview(circularProgressBarView)

@@ -35,6 +35,7 @@ class WeeklyStatisticView: SKCardView {
         super.init(frame: frame)
     }
     
+    
     override func draw(_ rect: CGRect) {
         super.draw(rect)
         setupStatisticCollectionView()
@@ -70,6 +71,7 @@ extension WeeklyStatisticView: UICollectionViewDelegate, UICollectionViewDataSou
         return statistics.count
     }
     
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "WeeklyStatisticCollectionViewCell", for: indexPath) as! WeeklyStatisticCollectionViewCell
         if cell.statistic == nil {
@@ -77,6 +79,7 @@ extension WeeklyStatisticView: UICollectionViewDelegate, UICollectionViewDataSou
         }
         return cell
     }
+    
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 52, height: 72)

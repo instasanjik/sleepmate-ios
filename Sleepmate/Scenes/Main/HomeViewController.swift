@@ -86,12 +86,14 @@ extension HomeViewController {
         setupLastSleepInfoView()
     }
     
+    
     fileprivate func setupScrollView() {
         view.addSubview(scrollView)
         scrollView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
     }
+    
     
     fileprivate func setupDayNameLabel() {
         scrollView.addSubview(dayNameLabel)
@@ -101,6 +103,7 @@ extension HomeViewController {
         }
     }
     
+    
     fileprivate func setupDateLabel() {
         scrollView.addSubview(dateLabel)
         dateLabel.snp.makeConstraints { make in
@@ -108,6 +111,7 @@ extension HomeViewController {
             make.top.equalTo(dayNameLabel.snp.bottom).offset(4)
         }
     }
+    
     
     fileprivate func setupCalendarButton() {
         scrollView.addSubview(calendarButton)
@@ -117,6 +121,7 @@ extension HomeViewController {
             make.height.width.equalTo(32)
         }
     }
+    
     
     fileprivate func setupWeeklyStatisticsView() {
         scrollView.addSubview(weeklyStatisticsView)
@@ -128,6 +133,7 @@ extension HomeViewController {
         }
     }
     
+    
     fileprivate func setupAverageSleepTimeView() {
         scrollView.addSubview(averageSleepTimeView)
         averageSleepTimeView.snp.makeConstraints { make in
@@ -138,6 +144,7 @@ extension HomeViewController {
         }
     }
     
+    
     fileprivate func setupQualityView() {
         scrollView.addSubview(qualityView)
         qualityView.snp.makeConstraints { make in
@@ -147,6 +154,7 @@ extension HomeViewController {
             make.height.equalTo(qualityView.snp.width)
         }
     }
+    
     
     fileprivate func setupLastSleepInfoView() {
         scrollView.addSubview(lastSleppInfoView)

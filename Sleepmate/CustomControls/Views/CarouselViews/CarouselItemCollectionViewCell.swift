@@ -31,6 +31,7 @@ class CarouselItemCollectionViewCell: UICollectionViewCell {
         setupBodyLabel()
     }
     
+    
     func setupItem(_ item: CarouselItem) {
         imageView.image = UIImage(named: item.imageName)
         bodyLabel.text  = item.bodyText
@@ -47,6 +48,7 @@ extension CarouselItemCollectionViewCell {
             make.centerX.top.left.equalTo(self)
         }
     }
+    
     
     fileprivate func setupBodyLabel() {
         addSubview(bodyLabel)

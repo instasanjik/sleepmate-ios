@@ -28,11 +28,13 @@ class LastSleepInfoView: SKCardView {
         super.init(frame: frame)
     }
     
+    
     override func draw(_ rect: CGRect) {
         super.draw(rect)
         setupTitleLabel()
         setupInfoViews()
     }
+    
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -49,6 +51,7 @@ extension LastSleepInfoView {
             make.top.left.right.equalToSuperview().inset(16)
         }
     }
+    
     
     fileprivate func setupInfoViews() {
         let superView = UIView()
@@ -71,6 +74,7 @@ extension LastSleepInfoView {
         setupFellAsleepView(superView)
     }
     
+    
     fileprivate func setupTimeInSleepView() {
         timeInSleepView.setupInfo(imageName: "MoonWhite", value: "6h 12m", description: "Time in sleep")
         timeInSleepView.snp.makeConstraints { make in
@@ -79,6 +83,7 @@ extension LastSleepInfoView {
             make.height.equalTo(36)
         }
     }
+    
     
     fileprivate func setupWakeUpTimeView(_ superView: UIView) {
         wakeUpTimeView.setupInfo(imageName: "WarmWeather", value: "07:12 AM", description: "Wake up time")
@@ -89,6 +94,7 @@ extension LastSleepInfoView {
         }
     }
     
+    
     fileprivate func  setupLyingInBedView(_ superView: UIView) {
         lyingInBedView.setupInfo(imageName: "Clock", value: "7h 23m", description: "Lying in bed")
         lyingInBedView.snp.makeConstraints { make in
@@ -98,6 +104,7 @@ extension LastSleepInfoView {
             make.height.equalTo(36)
         }
     }
+    
     
     fileprivate func setupFellAsleepView(_ superView: UIView) {
         fellAsleepView.setupInfo(imageName: "Zz", value: "25 min", description: "Fell asleep")

@@ -26,9 +26,11 @@ class WeeklyStatisticCollectionViewCell: UICollectionViewCell {
         return label
     }()
     
+    
     override func awakeFromNib() {
         backgroundColor = .clear
     }
+    
     
     override func draw(_ rect: CGRect) {
         setupProgressBarView()
@@ -41,6 +43,7 @@ class WeeklyStatisticCollectionViewCell: UICollectionViewCell {
         layoutIfNeeded()
         super.prepareForReuse()
     }
+    
     
     fileprivate func setData(_ statistic: DailyStatistic) {
         self.circularProgressBarView.progressAnimation(duration: 1,
@@ -65,6 +68,7 @@ extension WeeklyStatisticCollectionViewCell {
         layoutIfNeeded()
         circularProgressBarView.createCircularPath(radius: 20, lineWidth: 6, fontSize: 12)
     }
+    
     
     fileprivate func setupWeekDayLabel() {
         addSubview(weekDayLabel)

@@ -18,6 +18,7 @@ class CarouselViewController: UIViewController {
     lazy var carouselView = CarouselView()
     lazy var continueButton = DefaultWhiteButton()
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = ColorPalette.darkBlue
@@ -25,6 +26,7 @@ class CarouselViewController: UIViewController {
         setupContinueButton()
         setupCarouselView()
     }
+    
     
     override func viewDidAppear(_ animated: Bool) {
         carouselView.highlightItemAt(0)
@@ -43,6 +45,7 @@ extension CarouselViewController {
         }
     }
     
+    
     fileprivate func setupContinueButton() {
         view.addSubview(continueButton)
         continueButton.addTarget(self, action: #selector(continueTapped), for: .touchUpInside)
@@ -55,6 +58,7 @@ extension CarouselViewController {
         }
         continueButton.setupTitle(text: "CONTINUE")
     }
+    
     
     fileprivate func setupCarouselView() {
         view.addSubview(carouselView)

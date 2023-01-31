@@ -34,6 +34,7 @@ class InfoBlockView: UIView {
         super.init(coder: coder)
     }
     
+    
     fileprivate func setupUI() {
         addSubview(imageView)
         imageView.snp.makeConstraints { make in
@@ -55,6 +56,7 @@ class InfoBlockView: UIView {
             make.right.equalToSuperview()
         }
     }
+    
     
     func setupInfo(imageName: String, value: String, description: String) {
         imageView.image = UIImage(named: imageName)

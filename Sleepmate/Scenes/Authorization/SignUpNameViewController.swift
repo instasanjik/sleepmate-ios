@@ -64,6 +64,7 @@ extension SignUpNameViewController {
         }
     }
     
+    
     fileprivate func setupContinueButton() {
         view.addSubview(continueButton)
         continueButton.addTarget(self, action: #selector(continueTapped), for: .touchUpInside)
@@ -77,6 +78,7 @@ extension SignUpNameViewController {
         }
     }
     
+    
     fileprivate func setupLogoImageView() {
         view.addSubview(logoImageView)
         logoImageView.snp.makeConstraints { make in
@@ -86,6 +88,7 @@ extension SignUpNameViewController {
             make.right.equalTo(view).inset(-30)
         }
     }
+    
     
     fileprivate func setupGreetingLabel() {
         view.addSubview(greetingLabel)
@@ -107,6 +110,7 @@ extension SignUpNameViewController: UITextFieldDelegate {
         navigationController?.pushViewController(vc, animated: true)
     }
     
+    
     @objc func nameTextFieldEditingChanged(_ sender: UITextField) {
         if sender.text?.isEmpty == true {
             continueButton.disable()
@@ -114,6 +118,7 @@ extension SignUpNameViewController: UITextFieldDelegate {
             continueButton.enable()
         }
     }
+    
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         guard let textFieldText = textField.text,

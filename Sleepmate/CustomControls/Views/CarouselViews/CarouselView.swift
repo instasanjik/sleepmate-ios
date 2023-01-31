@@ -56,6 +56,7 @@ class CarouselView: UIView {
         return collectionView
     }()
     
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -63,9 +64,11 @@ class CarouselView: UIView {
         setupIndicatorsView()
     }
     
+    
     override func draw(_ rect: CGRect) {
         super.draw(rect)
     }
+    
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -83,6 +86,7 @@ extension CarouselView {
             make.bottom.equalTo(self).inset(40)
         }
     }
+    
     
     fileprivate func setupIndicatorsView() {
         addSubview(indicatorsCollectionView)

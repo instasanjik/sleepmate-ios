@@ -40,6 +40,7 @@ class ExpertCollectionViewCell: UICollectionViewCell {
         return label
     }()
     
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = ColorPalette.blue
@@ -47,10 +48,12 @@ class ExpertCollectionViewCell: UICollectionViewCell {
         layer.cornerRadius = 16
     }
     
+    
     override func draw(_ rect: CGRect) {
         super.draw(rect)
         setupUI()
     }
+    
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -61,11 +64,13 @@ class ExpertCollectionViewCell: UICollectionViewCell {
 
 extension ExpertCollectionViewCell {
     
+    
     fileprivate func setupUI() {
         setupAvatarImageView()
         setupNameLabel()
         setupDescriptionLabel()
     }
+    
     
     fileprivate func setupAvatarImageView() {
         addSubview(avatarImageView)
@@ -76,6 +81,7 @@ extension ExpertCollectionViewCell {
         }
     }
     
+    
     fileprivate func setupNameLabel() {
         addSubview(nameLabel)
         nameLabel.snp.makeConstraints { make in
@@ -84,6 +90,7 @@ extension ExpertCollectionViewCell {
             make.height.equalTo(16)
         }
     }
+    
     
     fileprivate func setupDescriptionLabel() {
         addSubview(descriptionLabel)

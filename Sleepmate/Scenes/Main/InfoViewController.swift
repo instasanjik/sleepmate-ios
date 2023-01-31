@@ -35,6 +35,7 @@ class InfoViewController: UIViewController {
         
     }()
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         experts = Server.shared.getExperts()
@@ -53,6 +54,7 @@ extension InfoViewController {
         view.backgroundColor = ColorPalette.darkBlue
     }
     
+    
     fileprivate func setupExpertsTitleLabel() {
         view.addSubview(expertsTitleLabel)
         expertsTitleLabel.snp.makeConstraints { make in
@@ -60,6 +62,7 @@ extension InfoViewController {
             make.top.equalToSuperview().inset(64)
         }
     }
+    
     
     fileprivate func setupExpertsCollectionView() {
         view.addSubview(expertsCollectionView)
@@ -69,8 +72,6 @@ extension InfoViewController {
             make.height.equalTo(200)
         }
     }
-    
-//    fileprivate func
     
     
 }

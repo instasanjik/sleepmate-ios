@@ -17,18 +17,22 @@ class DefaultWhiteButton: UIButton {
         setTitleColor(ColorPalette.black, for: .normal)
     }
     
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
     
     func setupTitle(text: String) {
         setTitle(text, for: .normal)
     }
     
+    
     func disable() {
         alpha = 0.7
         isEnabled = false
     }
+    
     
     func enable() {
         alpha = 1

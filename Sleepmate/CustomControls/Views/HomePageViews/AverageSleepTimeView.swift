@@ -46,9 +46,11 @@ class AverageSleepTimeView: SKCardView {
         return label
     }()
     
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
+    
     
     override func draw(_ rect: CGRect) {
         super.draw(rect)
@@ -56,6 +58,7 @@ class AverageSleepTimeView: SKCardView {
         setupHoursLabel()
         setupHoursPerDayLabel()
     }
+    
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -73,6 +76,7 @@ extension AverageSleepTimeView {
         }
     }
     
+    
     fileprivate func setupHoursLabel() {
         addSubview(hoursLabel)
         hoursLabel.snp.makeConstraints { make in
@@ -82,6 +86,7 @@ extension AverageSleepTimeView {
             make.bottom.equalToSuperview()
         }
     }
+    
     
     fileprivate func setupHoursPerDayLabel() {
         addSubview(hoursPerDayLabel)

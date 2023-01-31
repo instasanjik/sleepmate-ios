@@ -67,6 +67,7 @@ class LoginViewController: UIViewController {
         return label
     }()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Login"
@@ -96,6 +97,7 @@ extension LoginViewController {
         }
     }
     
+    
     fileprivate func setupPasswordTextField() {
         view.addSubview(passwordTextField)
         passwordTextField.snp.makeConstraints { make in
@@ -106,6 +108,7 @@ extension LoginViewController {
         }
     }
     
+    
     fileprivate func setupForgotPasswordLabel() {
         view.addSubview(forgotPassowordLabel)
         forgotPassowordLabel.snp.makeConstraints { make in
@@ -113,6 +116,7 @@ extension LoginViewController {
             make.bottom.equalTo(view.snp.centerY)
         }
     }
+    
     
     fileprivate func setupLogoImageView() {
         let logoSuperview = UIView()
@@ -131,6 +135,7 @@ extension LoginViewController {
         }
     }
     
+    
     fileprivate func setupLoginButton() {
         view.addSubview(loginButton)
         loginButton.snp.makeConstraints { make in
@@ -140,6 +145,7 @@ extension LoginViewController {
             make.height.equalTo(48)
         }
     }
+    
     
     fileprivate func setupSignUpLabels() {
         view.addSubview(signUpLabel)

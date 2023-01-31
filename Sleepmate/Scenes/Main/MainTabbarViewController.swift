@@ -13,7 +13,7 @@ class MainTabbarViewController: UITabBarController {
         super.viewDidLoad()
         configureViewControllers()
         updateTabbarUI()
-        selectedIndex = 1
+        selectedIndex = 2
     }
     
 

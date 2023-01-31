@@ -46,6 +46,7 @@ class SignUpAdditionViewController: UIViewController {
     
     lazy var signUpButton = DefaultWhiteButton()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = ColorPalette.darkBlue
@@ -72,6 +73,7 @@ extension SignUpAdditionViewController {
         }
     }
     
+    
     fileprivate func setupGreetingLabel() {
         view.addSubview(greetingLabel)
         greetingLabel.snp.makeConstraints { make in
@@ -80,6 +82,7 @@ extension SignUpAdditionViewController {
             make.right.equalTo(logoImageView.snp.left)
         }
     }
+    
     
     fileprivate func setupSignUpFormView() {
         view.addSubview(formSuperView)
@@ -93,6 +96,7 @@ extension SignUpAdditionViewController {
         setupSignUpButton()
     }
     
+    
     fileprivate func setupUsernameTextField() {
         formSuperView.addSubview(usernameTextField)
         usernameTextField.snp.makeConstraints { make in
@@ -100,6 +104,7 @@ extension SignUpAdditionViewController {
             make.height.equalTo(44)
         }
     }
+    
     
     fileprivate func setupPasswordTextField() {
         formSuperView.addSubview(passwordTextField)
@@ -109,6 +114,7 @@ extension SignUpAdditionViewController {
             make.height.equalTo(44)
         }
     }
+    
     
     fileprivate func setupSignUpButton() {
         formSuperView.addSubview(signUpButton)

@@ -215,10 +215,10 @@
 			children = (
 				0459E9022981CE5000A60D1E /* CircularProgressBarView.swift */,
 				0417833A2976CE800038EF40 /* SKTextField.swift */,
+				047222012985BAFA009E1EE8 /* SKCardView.swift */,
 				041783272975C50F0038EF40 /* DefaultWhiteButton.swift */,
 				0421BE4B29718C61001237C9 /* Views */,
 				0421BE5029719135001237C9 /* Extensions */,
-				047222012985BAFA009E1EE8 /* SKCardView.swift */,
 			);
 			path = CustomControls;
 			sourceTree = "<group>";
