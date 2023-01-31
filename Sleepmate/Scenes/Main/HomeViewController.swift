@@ -13,7 +13,6 @@ class HomeViewController: UIViewController {
     lazy var scrollView: UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.showsVerticalScrollIndicator = false
-        scrollView.contentSize = CGSize(width: Screen.width, height: Screen.height * 2)
         return scrollView
     }()
     
@@ -59,6 +58,12 @@ class HomeViewController: UIViewController {
                 fatalError("Temporary test")
             }
         }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        scrollView.contentSize = CGSize(width: Screen.width,
+                                        height: (view.subviews.last?.frame.maxY ?? 0) +
+                                        ((tabBarController?.tabBar.frame.height ?? 0)/2))
     }
     
 
