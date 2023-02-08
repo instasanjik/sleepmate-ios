@@ -57,7 +57,7 @@ extension WeeklyStatisticView {
         addSubview(statisticsCollectionView)
         
         statisticsCollectionView.snp.makeConstraints { make in
-            make.left.right.equalToSuperview().inset(16)
+            make.left.right.equalToSuperview()
             make.top.bottom.equalToSuperview().inset(8)
         }
     }
@@ -83,6 +83,11 @@ extension WeeklyStatisticView: UICollectionViewDelegate, UICollectionViewDataSou
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 52, height: 72)
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+       return UIEdgeInsets(top: 0, left: 24, bottom: 0, right: 24)
     }
     
     
