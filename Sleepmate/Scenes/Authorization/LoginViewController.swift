@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import SVProgressHUD
 
 class LoginViewController: UIViewController {
     
@@ -45,6 +46,7 @@ class LoginViewController: UIViewController {
     lazy var loginButton: DefaultWhiteButton = {
         let button = DefaultWhiteButton()
         button.setupTitle(text: "LOGIN")
+        button.addTarget(self, action: #selector(signInTapped), for: .touchUpInside)
         return button
     }()
     
@@ -170,9 +172,30 @@ extension LoginViewController {
         print(NSString(#file).lastPathComponent + ": forgot password tapped")
     }
     
+    
     @objc func signUpTapped(_ sender: UITapGestureRecognizer) {
         let vc = SignUpNameViewController()
         navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
+    @objc func signInTapped() {
+        SVProgressHUD.show()
+        if self.usernameTextField.text == "" && self.passwordTextField.text == "" {
+            SVProgressHUD.showError(withStatus: "You need to fill all fieds")
+            return
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            if self.usernameTextField.text == "Instasanjik" && self.passwordTextField.text == "123" {
+                SVProgressHUD.showSuccess(withStatus: "You are welcome")
+                let vc = LoadingViewController()
+                vc.modalTransitionStyle = .crossDissolve
+                vc.modalPresentationStyle = .fullScreen
+                self.present(vc, animated: true)
+            } else {
+                SVProgressHUD.showError(withStatus: "Incorrent login or password")
+            }
+        }
     }
     
     
