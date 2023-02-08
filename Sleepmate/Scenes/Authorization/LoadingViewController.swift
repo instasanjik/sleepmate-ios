@@ -16,6 +16,11 @@ class LoadingViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = ColorPalette.darkBlue
         setupAnimationView()
+        
+        // TODO: delete fake transition
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.goToMainTabbarViewController()
+        }
     }
     
 
@@ -33,6 +38,14 @@ extension LoadingViewController {
             make.height.greaterThanOrEqualTo(86)
             make.height.lessThanOrEqualTo(200)
         }
+    }
+    
+    
+    fileprivate func goToMainTabbarViewController() {
+        let vc = MainTabbarViewController()
+        vc.modalTransitionStyle = .crossDissolve
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
     }
     
     
