@@ -12,6 +12,13 @@ class InfoViewController: UIViewController {
     
     var experts: [Expert] = []
     
+    lazy var scrollView: UIScrollView = {
+        let scrollView = UIScrollView()
+        scrollView.showsVerticalScrollIndicator = false
+        scrollView.showsHorizontalScrollIndicator = false
+        return scrollView
+    }()
+    
     lazy var expertsTitleLabel: UILabel = {
         let label = UILabel()
         label.text = "Sleep experts"
@@ -40,8 +47,14 @@ class InfoViewController: UIViewController {
         super.viewDidLoad()
         experts = Server.shared.getExperts()
         updateUI()
-        setupExpertsTitleLabel()
-        setupExpertsCollectionView()
+        setupScrollView()
+    }
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        scrollView.contentSize = CGSize(width: Screen.width,
+                                        height: (view.subviews.last?.frame.maxY ?? 0) +
+                                        ((tabBarController?.tabBar.frame.height ?? 0)/2))
     }
     
 
@@ -55,8 +68,18 @@ extension InfoViewController {
     }
     
     
+    fileprivate func setupScrollView() {
+        view.addSubview(scrollView)
+        scrollView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
+        setupExpertsTitleLabel()
+        setupExpertsCollectionView()
+    }
+    
+    
     fileprivate func setupExpertsTitleLabel() {
-        view.addSubview(expertsTitleLabel)
+        scrollView.addSubview(expertsTitleLabel)
         expertsTitleLabel.snp.makeConstraints { make in
             make.left.equalToSuperview().inset(24)
             make.top.equalToSuperview().inset(64)
@@ -65,11 +88,12 @@ extension InfoViewController {
     
     
     fileprivate func setupExpertsCollectionView() {
-        view.addSubview(expertsCollectionView)
+        scrollView.addSubview(expertsCollectionView)
         expertsCollectionView.snp.makeConstraints { make in
             make.top.equalTo(expertsTitleLabel.snp.bottom).inset(-12)
             make.left.right.equalToSuperview()
             make.height.equalTo(200)
+            make.centerX.equalToSuperview()
         }
     }
     
