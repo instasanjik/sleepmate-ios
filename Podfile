@@ -11,4 +11,5 @@ target 'Sleepmate' do
   pod 'Alamofire'             # api requests framework
   pod 'SwiftyJSON'            # json framework
   pod 'Charts'                # charts framework
+  pod 'SVProgressHUD'       
 end
