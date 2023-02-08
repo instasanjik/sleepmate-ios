@@ -41,6 +41,7 @@ class SignUpAdditionViewController: UIViewController {
         let textField = SKTextField()
         textField.placeholder = "Enter your password"
         textField.textContentType = .oneTimeCode
+        textField.isSecureTextEntry = true
         return textField
     }()
     
